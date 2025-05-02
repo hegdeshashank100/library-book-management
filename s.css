@@ -1,0 +1,155 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('photo.webp') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #f8f9fa;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover {
+    background: #17a2b8;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Container Styling */
+.container {
+    margin: 40px auto;
+    padding: 30px;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #222;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Star Rating System */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.star {
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+    transform: scale(1.2);
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #17a2b8;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.btn-delete {
+    background: #d9534f;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
